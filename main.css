@@ -12,6 +12,11 @@ body {
     padding-bottom: 20px;
     width: 100%;
     background-color: white;
+    text-align: center;
+}
+#navbar img {
+    width: 25%;
+    margin: 0px auto;
 }
 #navbar header {
     text-align: center;
@@ -33,7 +38,6 @@ body {
 #main-doc {
     width: 90%;
     margin: 20px auto;
-    background-color: #f5f5f5;
     padding: 20px;
     padding-bottom: 0px;
 }
@@ -88,9 +92,6 @@ footer {
     line-height: 22px;
 }
 @media screen and (min-width:650px) {
-    body {
-        background-color: #f5f5f5;
-    }
     #navbar {
         height: 100%;
         top: 0px;
@@ -100,11 +101,11 @@ footer {
         margin: 20px;
         border-radius: 15px;
     }
-    #navbar header  {
+    #navbar img {
         margin-top: 25%;
     }
     #navbar ul{
-        margin-top: 25%;
+        margin-top: 5%;
         list-style: none;
     }
     #navbar ul li {
@@ -114,7 +115,6 @@ footer {
         width: 72%;
         margin: 0px auto;
         margin-left: 25%;
-        background-color: #f5f5f5;
     }
     #main-doc .main-section {
         width: 85%;
