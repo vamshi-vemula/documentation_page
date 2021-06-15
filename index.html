@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header>Java Documentation</header>
+        <ul>
+            <li><a class="nav-link" href="#why_Java_?">Why Java ?</a></li>
+            <li><a class="nav-link" href="#java-introduction">Java Introduction</a></li>
+            <li><a class="nav-link" href="#data_types">Data Types</a></li>
+            <li><a class="nav-link" href="#basic_operators">Basic operators</a></li>
+            <li><a class="nav-link" href="#loop_control">Loop Control</a></li>
+            <li><a class="nav-link" href="#decision_making">Decision Making</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc"> 
+        <section class="main-section" id="why_Java_?">
+            <header>Why Java ?</header>
+            <p>Java is a MUST for students and working professionals to become a great Software Engineer 
+                specially when they are working in Software Development Domain. I will list down some of the 
+               key advantages of learning Java Programming:
+            </p>
+            <h3>Java Features</h3>
+            <ul>
+                <li><p><b>Object Oriented −</b> In Java, everything is an Object. Java can be easily extended since it is based on the Object model.</p></li>
+                <li><p><b>Platform Independent −</b> Unlike many other programming languages including C and C++, when Java is compiled, it is not compiled into platform specific machine, rather into platform independent byte code. This byte code is distributed over the web and interpreted by the Virtual Machine (JVM) on whichever platform it is being run on.</p></li>
+                <li><p><b>Simple −</b> Java is designed to be easy to learn. If you understand the basic concept of OOP Java, it would be easy to master.</p></li>
+                <li><p><b>Secure −</b> With Java's secure feature it enables to develop virus-free, tamper-free systems. Authentication techniques are based on public-key encryption.</p></li>
+                <li><p><b>Architecture-neutral −</b> Java compiler generates an architecture-neutral object file format, which makes the compiled code executable on many processors, with the presence of Java runtime system.</p></li>
+                <li><p><b>Portable −</b> Being architecture-neutral and having no implementation dependent aspects of the specification makes Java portable. Compiler in Java is written in ANSI C with a clean portability boundary, which is a POSIX subset.</p></li>
+                <li><p><b>Robust −</b> Java makes an effort to eliminate error prone situations by emphasizing mainly on compile time error checking and runtime checking.</p></li>
+                <li><p><b>High Performance −</b> With the use of Just-In-Time compilers, Java enables high performance.</p></li>
+                <li><p><b>Multithreaded −</b> With Java's multithreaded feature it is possible to write programs that can perform many tasks simultaneously. This design feature allows the developers to construct interactive applications that can run smoothly.</p></li>
+            </ul>
+        </section>
+        <section class="main-section" id="java-introduction">
+            <header>Java Introduction</header>
+            <p>When we consider a Java program, it can be defined as a collection of objects that communicate via invoking each other's methods. Let us now briefly look into what do class, object, methods, and instance variables mean.</p>
+            <ul>
+                <li><p><b>Object −</b> Objects have states and behaviors. Example: A dog has states - color, name, breed as well as behavior such as wagging their tail, barking, eating. An object is an instance of a class.</p></li>
+                <li><p><b>Class −</b> A class can be defined as a template/blueprint that describes the behavior/state that the object of its type support</p></li>
+                <li><p><b>Methods −</b> A method is basically a behavior. A class can contain many methods. It is in methods where the logics are written, data is manipulated and all the actions are executed.</p></li>
+                <li><p><b>Instance Variables −</b> Each object has its unique set of instance variables. An object's state is created by the values assigned to these instance variables.</p></li>
+            </ul>
+            <h3>First Java Program</h3>
+            <p>Let us look at a simple code that will print the words Hello World.</p>
+            <p>Example :</p>
+            <code>public class MyFirstJavaProgram {
+                public static void main(String []args) {
+                   System.out.println("Hello World"); // prints Hello World
+                }
+             }
+            </code>
+            <p>Output :</p>
+            <code>C:\> javac MyFirstJavaProgram.java
+                C:\> java MyFirstJavaProgram 
+                Hello World
+            </code>
+        </section>
+        <section class="main-section" id="data_types">
+            <header>Data Types</header>
+            <p>Variables are nothing but reserved memory locations to store values. This means that when you create a variable you reserve some space in the memory.</p>
+            <p>There are two data types available in Java −</p>
+            <ul>
+                <li><p>Primitive Data Types</p></li>
+                <li><p>Reference/Object Data Types</p></li>
+            </ul>
+            <h3>Primitive Data Types</h3>
+            <p>There are eight primitive datatypes supported by Java. Primitive datatypes are predefined by the language and named by a keyword. Let us now look into the eight primitive data types in detail.</p>
+            <h4>byte</h4>
+            <ul>
+               <li><p>Byte data type is an 8-bit signed two's complement integer</p></li>
+               <li><p>Minimum value is -128 (-2^7)</p></li>
+               <li><p>Maximum value is 127 (inclusive)(2^7 -1)</p></li>
+               <li><p>Default value is 0</p></li>
+               <li><p>Byte data type is used to save space in large arrays, mainly in place of integers, since a byte is four times smaller than an integer.</p></li>
+               <li><p>Example: byte a = 100, byte b = -50</p></li>
+            </ul>
+            <h4>short</h4>
+            <ul>
+               <li><p>Short data type is a 16-bit signed two's complement integer</p></li>
+               <li><p>Minimum value is -32,768 (-2^15)</p></li>
+               <li><p>Maximum value is 32,767 (inclusive) (2^15 -1)</p></li>
+               <li><p>Short data type can also be used to save memory as byte data type. A short is 2 times smaller than an integer</p></li>
+               <li><p>Default value is 0.</p></li>
+               <li><p>Example: short s = 10000, short r = -20000</p></li>
+            </ul>
+            <h4>int</h4>
+            <ul>
+               <li><p>Int data type is a 32-bit signed two's complement integer.</p></li>
+               <li><p>Minimum value is - 2,147,483,648 (-2^31)</p></li>
+               <li><p>Maximum value is 2,147,483,647(inclusive) (2^31 -1)</p></li>
+               <li><p>Integer is generally used as the default data type for integral values unless there is a concern about memory.</p></li>
+               <li><p>The default value is 0</p></li>
+               <li><p>Example: int a = 100000, int b = -200000</p></li>
+            </ul>
+            <h4>long</h4>
+            <ul>
+               <li><p>Long data type is a 64-bit signed two's complement integer</p></li>
+               <li><p>Minimum value is -9,223,372,036,854,775,808(-2^63)</p></li>
+               <li><p>Maximum value is 9,223,372,036,854,775,807 (inclusive)(2^63 -1)</p></li>
+               <li><p>This type is used when a wider range than int is needed</p></li>
+               <li><p>Default value is 0L</p></li>
+               <li><p>Example: long a = 100000L, long b = -200000L</p></li>
+            </ul>
+            <h4>float</h4>
+            <ul>
+               <li><p>Float data type is a single-precision 32-bit IEEE 754 floating point</p></li>
+               <li><p>Float is mainly used to save memory in large arrays of floating point numbers</p></li>
+               <li><p>Default value is 0.0f</p></li>
+               <li><p>Float data type is never used for precise values such as currency</p></li>
+               <li><p>Example: float f1 = 234.5f</p></li>
+            </ul>
+            <h4>double</h4>
+            <ul>
+               <li><p>double data type is a double-precision 64-bit IEEE 754 floating point</p></li>
+               <li><p>This data type is generally used as the default data type for decimal values, generally the default choice</p></li>
+               <li><p>Double data type should never be used for precise values such as currency</p></li>
+               <li><p>Default value is 0.0d</p></li>
+               <li><p>Example: double d1 = 123.4</p></li>
+            </ul>
+            <h4>boolean</h4>
+            <ul>
+               <li><p>boolean data type represents one bit of information</p></li>
+               <li><p>There are only two possible values: true and false</p></li>
+               <li><p>This data type is used for simple flags that track true/false conditions</p></li>
+               <li><p>Default value is false</p></li>
+               <li><p>Example: boolean one = true</p></li>
+            </ul>
+            <h4>char</h4>
+            <ul>
+               <li><p>char data type is a single 16-bit Unicode character</p></li>
+               <li><p>Minimum value is '\u0000' (or 0)</p></li>
+               <li><p>Maximum value is '\uffff' (or 65,535 inclusive)</p></li>
+               <li><p>Char data type is used to store any character</p></li>
+               <li><p>Example: char letterA = 'A'</p></li>
+            </ul>
+            <h3>Reference Datatypes</h3>
+            <ul>
+                <li><p>Reference variables are created using defined constructors of the classes. They are used to access objects. These variables are declared to be of a specific type that cannot be changed. For example, Employee, Puppy, etc.</p></li>
+                <li><p>Class objects and various type of array variables come under reference datatype.</p></li>
+                <li><p>Default value of any reference variable is null.</p></li>
+                <li><p>A reference variable can be used to refer any object of the declared type or any compatible type</p></li>
+                <li><p>Example: Animal animal = new Animal("giraffe");</p></li>
+            </ul>
+        </section>
+        <section class="main-section" id="basic_operators">
+            <header>Basic operators</header>
+            <p>Java provides a rich set of operators to manipulate variables. We can divide all the Java operators into the following groups −</p>
+            <ul>
+                <li><p>Arithmetic Operators</p></li>
+                <li><p>Relational Operators</p></li>
+                <li><p>Bitwise Operators</p></li>
+                <li><p>Logical Operators</p></li>
+                <li><p>Assignment Operators</p></li>
+                <li><p>Misc Operators</p></li>
+            </ul>
+            <h4>Arithmetic Operators</h4>
+            <p>Arithmetic operators are used in mathematical expressions in the same way that they are used in algebra</p>
+            <p>They are -</p>
+            <p>+ (Addition) , - (Subtraction) , * (Multiplication) , / (Division) , % (Modulus) , ++ (Increment) , -- (Decrement)  </p>
+            <h4>Relational Operators</h4>
+            <p>There are following relational operators supported by Java language.</p>
+            <p>== (equal to) , != (not equal to) , > (greater than) , < (less than) , >= (greater than or equal to) , <= (less than or equal to)</p>
+            <h4>Bitwise Operators</h4>
+            <p>Java defines several bitwise operators, which can be applied to the integer types, long, int, short, char, and byte.
+
+                Bitwise operator works on bits and performs bit-by-bit operation. Assume if a = 60 and b = 13; now in binary format they will be as follows −</p>
+            <p>a = 0011 1100<br>b = 0000 1101<br>-----------------<br>a&b = 0000 1100 <br>a|b = 0011 1101 <br> a^b = 0011 0001 <br> ~a  = 1100 0011</p> 
+            <h4>Logical Operators</h4>
+            <p>The following table lists the logical operators −</p>
+            <p>&& (logical and) , || (logical or) , ! (logical not)</p>
+            <h4>Assignment Operators</h4>
+            <p>Following are the assignment operators supported by Java language −</p>
+            <p>= <br> += <br> -= <br> *= <br> /=</p>
+            <h4>Miscellaneous Operators</h4>
+            <p>There are few other operators supported by Java Language.</p>
+            <h5>Conditional Operator ( ? : )</h5>
+            <p>Conditional operator is also known as the ternary operator. This operator consists of three operands and is used to evaluate Boolean expressions. The goal of the operator is to decide, which value should be assigned to the variable. The operator is written as −</p>
+            <code>variable x = (expression) ? value if true : value if false</code>
+            <p>Example</p>
+            <code>public class Test {
+
+                public static void main(String args[]) {
+                   int a, b;
+                   a = 10;
+                   b = (a == 1) ? 20: 30;
+                   System.out.println( "Value of b is : " +  b );
+             
+                   b = (a == 10) ? 20: 30;
+                   System.out.println( "Value of b is : " + b );
+                }
+             }</code>
+            <p>Output</p> 
+            <code>Value of b is : 30
+                Value of b is : 20
+            </code>
+            <h5>instanceof Operator</h5>
+            <p>This operator is used only for object reference variables. The operator checks whether the object is of a particular type (class type or interface type). instanceof operator is written as −</p>
+            <code>( Object reference variable ) instanceof  (class/interface type)</code>
+            <p>If the object referred by the variable on the left side of the operator passes the IS-A check for the class/interface type on the right side, then the result will be true. Following is an example −</p>
+            <p>Example</p>
+            <code>public class Test {
+
+                public static void main(String args[]) {
+             
+                   String name = "James";
+             
+                   // following will return true since name is type of String
+                   boolean result = name instanceof String;
+                   System.out.println( result );
+                }
+             }
+            </code>
+            <p>Output</p>
+            <code>true</code>
+        </section>
+        <section class="main-section" id="loop_control">
+            <header>Loop Control</header>
+            <p>A loop statement allows us to execute a statement or group of statements multiple times and following is the general form of a loop statement in most of the programming languages.</p>
+            <p>Java programming language provides the following types of loop to handle looping requirements. Click the following links to check their detail.</p>
+            <ul>
+                <li><p><b>while loop -</b>Repeats a statement or group of statements while a given condition is true. It tests the condition before executing the loop body.</p></li>
+                <li><p><b>for loop -</b>Execute a sequence of statements multiple times and abbreviates the code that manages the loop variable.</p></li>
+                <li><p><b>do...while loop -</b>Like a while statement, except that it tests the condition at the end of the loop body.</p></li>
+            </ul>
+            <h4>Loop Control Statements</h4>
+            <p>Loop control statements change execution from its normal sequence. When execution leaves a scope, all automatic objects that were created in that scope are destroyed.</p>
+            <ul>
+                <li><p><b>break statement -</b> Terminates the loop or switch statement and transfers execution to the statement immediately following the loop or switch.</p></li>
+                <li><p><b>continue statement -</b> Causes the loop to skip the remainder of its body and immediately retest its condition prior to reiterating.</p></li>
+            </ul>
+            <h4>Enhanced for loop in Java</h4>
+            <p>As of Java 5, the enhanced for loop was introduced. This is mainly used to traverse collection of elements including arrays.</p>
+            <p>Syntax</p>
+            <code>for(declaration : expression) {
+                // Statements
+             }
+            </code>
+            <p>Example</p>
+            <code>public class Test {
+
+                public static void main(String args[]) {
+                   int [] numbers = {10, 20, 30, 40, 50};
+             
+                   for(int x : numbers ) {
+                      System.out.print( x );
+                      System.out.print(",");
+                   }
+                   System.out.print("\n");
+                   String [] names = {"James", "Larry", "Tom", "Lacy"};
+             
+                   for( String name : names ) {
+                      System.out.print( name );
+                      System.out.print(",");
+                   }
+                }
+             }
+            </code>
+            <p>Output</p>
+            <code>10, 20, 30, 40, 50,
+                James, Larry, Tom, Lacy,
+            </code>
+        </section>
+        <section class="main-section" id="decision_making">
+            <header>Decision Making</header>
+            <p>Decision making structures have one or more conditions to be evaluated or tested by the program, along with a statement or statements that are to be executed if the condition is determined to be true, and optionally, other statements to be executed if the condition is determined to be false.</p>
+            <p>Java programming language provides following types of decision making statements.</p>
+            <ul>
+                <li><p><b>if statement - </b> An if statement consists of a boolean expression followed by one or more statements.</p></li>
+                <li><p><b>if...else statement - </b> An if statement can be followed by an optional else statement, which executes when the boolean expression is false.</p></li>
+                <li><p><b>nested if statement - </b> You can use one if or else if statement inside another if or else if statement(s).</p></li>
+                <li><p><b>switch statement - </b> A switch statement allows a variable to be tested for equality against a list of values.</p></li>
+            </ul>
+            <h4>The ? : Operator</h4>
+            <p>We have covered conditional operator ? : in the previous chapter which can be used to replace if...else statements. It has the following general form −</p>
+            <code>Exp1 ? Exp2 : Exp3;</code>
+            <p>Where Exp1, Exp2, and Exp3 are expressions. Notice the use and placement of the colon.<br> To determine the value of the whole expression, initially exp1 is evaluated.</p>
+            <p>If the value of exp1 is true, then the value of Exp2 will be the value of the whole expression.</p>
+            <p> If the value of exp1 is false, then Exp3 is evaluated and its value becomes the value of the entire expression.</p>
+        </section>
+        <footer>
+            <p>Designed and Developed By <a href="">Vamshi Vemula</a></p>
+            <p>Content Taken From <a href="">Tutorialspoint</a></p>
+        </footer>
+    </main>
+</body>
+</html>

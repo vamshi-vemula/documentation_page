@@ -1,0 +1,132 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+body {
+    background-color: #f5f5f5;
+}
+#navbar {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    background-color: white;
+}
+#navbar header {
+    text-align: center;
+    font-size: 30px;
+    color: #5F4B8BFF;
+    font-weight: bold;
+}
+#navbar ul{
+    text-align: center;
+    margin: 20px auto 0px auto;
+}
+#navbar ul li {
+    font-size: 18px;
+    margin: 8px auto;
+}
+#navbar ul li a {
+    color: #5F4B8BFF;
+}
+#main-doc {
+    width: 90%;
+    margin: 20px auto;
+    background-color: #f5f5f5;
+    padding: 20px;
+    padding-bottom: 0px;
+}
+#main-doc .main-section {
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 15px;
+}
+#main-doc header {
+    font-size: 21px;
+    font-weight: bold;
+    color: #5F4B8BFF;
+}
+#main-doc p {
+    line-height: 20px;
+    margin: 10px auto;
+}
+#main-doc h3 {
+    color: #505050;
+}
+#main-doc h4 {
+    color: #505050;
+}
+#main-doc p b {
+    color: #505050;
+}
+#main-doc ul {
+    list-style:square;
+}
+#main-doc li {
+    margin-left: 30px;
+}
+#main-doc code {
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #ecebeb;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    font-family: monospace;
+}
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    line-height: 22px;
+}
+@media screen and (min-width:650px) {
+    body {
+        background-color: #f5f5f5;
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+    }
+    #navbar {
+        height: 89vh;
+        margin: 20px;
+        border-radius: 15px;
+        grid-column: 1/4;
+    }
+    #navbar header  {
+        margin-top: 25%;
+    }
+    #navbar ul{
+        margin-top: 25%;
+        list-style: none;
+    }
+    #navbar ul li {
+        margin: 8% auto ;
+    }
+    #main-doc {
+        grid-column: 4/13;
+        margin: 0px auto;
+        background-color: #f5f5f5;
+        height: 96vh;
+        overflow:scroll;
+        margin-bottom: 0px;
+    }
+    #main-doc .main-section {
+        margin: 25px auto;
+        width: 85%;
+    }
+    #main-doc header {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    #main-doc p {
+        font-size: 17px;
+        line-height: 22px;
+    }
+}
