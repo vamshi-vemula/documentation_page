@@ -90,14 +90,15 @@ footer {
 @media screen and (min-width:650px) {
     body {
         background-color: #f5f5f5;
-        display: grid;
-        grid-template-columns: repeat(12,1fr);
     }
     #navbar {
-        height: 89vh;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        width: 25%;
+        position: fixed;
         margin: 20px;
         border-radius: 15px;
-        grid-column: 1/4;
     }
     #navbar header  {
         margin-top: 25%;
@@ -110,16 +111,14 @@ footer {
         margin: 8% auto ;
     }
     #main-doc {
-        grid-column: 4/13;
+        width: 72%;
         margin: 0px auto;
+        margin-left: 25%;
         background-color: #f5f5f5;
-        height: 96vh;
-        overflow:scroll;
-        margin-bottom: 0px;
     }
     #main-doc .main-section {
-        margin: 25px auto;
         width: 85%;
+        margin: 25px auto;
     }
     #main-doc header {
         font-size: 24px;
